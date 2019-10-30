@@ -1,0 +1,41 @@
+/*RGB COLORS*/
+div{
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    margin: 20px;
+}
+
+.hsla{
+    background: hsla(127, 50%, 20%, 0.65)
+}
+
+.rgba{
+    background: rgba(127,51,191,0.6);
+}
+
+.reservadas{
+    background: lime;
+}
+
+/*Estos son colores combinados de luces, el numero maximo es el 255*/
+.luzRGB{
+    background: rgb(0, 80, 255);
+}
+
+/*Colores hexadecimales, cuando los dos digitos de cada color esten repetidos puede simplificarse poniendo cada letra 
+#0F0 = #00ff00, */
+.hex{
+    background: #643005;
+}
+/*Colors RGB porcentual*/
+.porcentual{
+    background: rgb(50%,20%,75%);
+}
+/*formato de colores hsl, tono, saturacion y luminosidad
+el primer dato es el grado donde se posiciona en la rueda,
+el segundo el la saturacion de luz y el ultio la transparencia*/
+.hsl{
+    background: hsl(240, 100%, 50%)
+}
+
