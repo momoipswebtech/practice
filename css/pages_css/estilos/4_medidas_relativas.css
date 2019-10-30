@@ -1,0 +1,67 @@
+/*Medidas absolutas, */
+
+body{
+    font-size: 18px;
+}
+h2{
+    font-size: 25px;
+    color: blue;
+}
+/*El EM relativisa al doble de la medidada, es decir, si yo estandarizo 16 px, la em
+daria el doble de tamaño de la medida detectada mayor*/
+p.em{
+    font-size: 2em;
+}
+ div p{
+     font-size: 2em;
+ }
+
+ div p.rem{
+     font-size: 2rem;
+ }
+
+ p.ex{
+     font-size: 1ex;
+ }
+ /*
+    in: pulgadas o inches
+    cm: centimetros
+    mm: milimetros
+    pt: puntos 1pt=o.35mm
+    pc: picas 1pc= 12pt = 4.23 mm
+ */
+
+ p.in{
+     font-size: 0.3in;
+ }
+ p.cm{
+     font-size: 1cm;
+ }
+ p.mm{
+     font-size: 15mm;
+ }
+ /*en las media quertys es donde se usa para impreciòn*/
+ p.pt{
+     font-size: 20pt;
+ }
+p.pc{
+    font-size: 1pc;
+}
+
+/*Medidas porcentuales, se utilizan para el responsing desing*/
+
+div{
+    background: brown;
+}
+
+div.fija{
+    height: 100px;
+    width: 100px;
+}
+
+div.porcentual{
+    height: 100px;
+    width: 50%;
+    background: green !important;
+    margin: 5%;
+}
