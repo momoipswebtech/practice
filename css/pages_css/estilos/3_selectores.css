@@ -1,0 +1,89 @@
+/*Optimizacion de codigo, si quiero que diferentes elementos tomen la misma propiedad
+los puedo agrupar como sigue*/
+h2, h3{
+    color:red;
+}
+/*de la siguiente forma se especifica la ruta, todos los h2 que se encuentren dentro de un header
+tomaran la propiedad indicada*/
+header h2{
+    color: greenyellow;
+}
+/*para dar una propiedad especifica a un elemento utilizados, con el identificador id
+el id debe ser exclusivo*/
+p{
+    color: indigo;
+}
+/*el identificador es exclusivo, y lopodemos solo dejar con #azul y tambien funciona*/
+p#azul{
+    color: blue;
+}
+/*El selector class, se usa para varios elementos html, tanto archivos y 
+clases, y estas se identifican con puntos*/
+.preuba{
+    color: rgb(15, 89, 51);
+}
+.grande{
+    font-size: 25px;
+}
+/*Hacereferencia a todos los p que tengan como hermano mayor un p*/
+p+p{
+    font-weight: bolder;
+    color: black;
+}
+
+/*este nos indica que todo parrafo, que sea hijo de un div, tomara las propiedades*/
+div > p{
+    color: coral;
+}
+/*Cuando no sea hijo no se aplicara, si ubiera un padre del div seguiria con sus prpiedades*/
+/*Selector de hermanos, se coloca con simbolo de la ~ */
+
+p ~ p{
+    font-size: 35px;
+    color: darkblue;
+}
+
+/*Selectores de atributos, de lenguaje, title*/
+
+h2[title]{
+    color: chocolate;
+}
+/*Si quiero especificar la propiedad titulo en especifico, es de la siguiente forma*/
+h2[title="color big"]{
+    color: cornflowerblue;
+}
+/*si quiero que tome propiedad con que tenga un caracter, solo debo agregar el simbolo ~ antes del = */
+
+h2[title ~="big"]{
+    font-size: 35px;
+}
+
+h3[lang|="es"]{
+    color: black;
+}
+/*
+
+    colision de estilos
+
+    1. css del navegador
+    2. css del usuario
+    3. archivos css enlazados en el orden anadido
+    4. propiedades que se heredan
+    5. propiedades propias del elemento
+    6. clases asignadas
+    7. identificador id, si hubira mas de dos identificadores en una etiqueta
+    toma en cuenta tambien el orden. Pero si le escribes !important-> no modificara el estilo- se colocara despues de la propiedad.
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
