@@ -1,0 +1,36 @@
+div.dimension1{
+    /*anchura minima*/
+    min-width: 250px;
+    /*anchura maxima*/
+    max-width: 400px;
+}
+
+div{
+    width: 50%;
+    height: 100px;
+    border: 1px solid green;
+    /*el margin, cuando solo ponemos una cifra, se
+    coloca el margen indicado en todas las direcciones,
+    si agregamos una cantidad mas, 20px 50px, el primero
+    serian los margenes de arriba y abajo y el 50
+    serian de los laterales*/
+    margin: 20px;
+    /*20px 30px 40px 50px, al agregar 4 cantidades de 
+    margen, se acomodan el sentido de las manecillas del
+    reloj, 20 arriba, 30 derecha, 40 abajo y 50 izquierda*/
+    /*Las cantiddades se pueden dar en porcentage*/
+    /*maegin-bottom da margen en la parte de abajo,
+    margin left, lado izquierdo, margin right */
+    /*padding, es el margen interno*/
+    padding: 10px;
+}
+p{
+    padding: 5px;
+}
+
+a{
+    border: 1px solid blue;
+    /*para hacer más grande el área de selección se hace con un padding*/
+    padding: 5px;
+}
+
