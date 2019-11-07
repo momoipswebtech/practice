@@ -1,0 +1,50 @@
+/*los position son los lugares en especifico que que ocuparan los elementos
+si no le dices nada, por de faul los iniciara a pintar en la esquina superior
+izquierda de la pantalla*/
+.padre{
+    width: 250px;
+    height: 950px;
+    margin: 25px;
+    background: orange;
+    position: relative;
+}
+
+/*.padre > div{
+    display: inline-block;
+    vertical-align: middle;/*por defecto alinea el botton
+}*/
+.hijo2{
+    width: 100px;
+    height: 100px;
+    background: green;
+    float: right;/*con esta opcion el elemento se va a la derecha y deja el espacio
+    y el hijo 1 se posicionara en el espacio, lo normal es que cuando ponemos un float
+    a los siguientes elementos se les pone un display inline block*/
+    
+}
+
+.hijo1{
+    width: 50px;
+    height: 50px;
+    background: red;
+    display: inline-block;
+    /*los static, no toman en cuenta ninguna coordenada
+    los relative, si lo reconocen, aplica al hijo con respecto al padre
+     */
+    /*position: static;*/
+    /*el position absolute hace que el elemento no exista para los demas
+    con el position absolute al darle coordenadas ignora el elemento padre
+    y se ubica desde la pantalla*/
+    /*position: absolute;*/
+    /*top: 0px;
+    left: 200px;
+    position: fixed;/*con esta posicion se se ubicara el hijo con respecto al body
+    y siempre estara presente en pantalla */
+}
+
+.hijo3{
+    width: 50px;
+    height: 50px;
+    background: royalblue;
+    clear: both;/*limpia las coordenadas e inicia todo*/
+}

@@ -1,0 +1,14 @@
+p{
+    border: 2px solid black;
+    background: orangered;
+    /*por defoult viene con diaplay block*/
+    /*para el responsign desing, es mejor utilizar inline-block
+    te damargenes por defecto */
+    display: inline-block;
+    margin: 50px 0px;
+
+}
+/*con este puedes desaparecer elementos en version de telefono*/
+p#ghost{
+    display: none;
+}
