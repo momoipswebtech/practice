@@ -1,0 +1,35 @@
+/*pseudo clases para cambiar el color de los links visitados*/
+/*
+link
+visited
+hover
+active
+focus
+*/
+
+/*link sin visitar*/
+
+a#link1:link{
+    color: green;
+}
+/*link visitado*/
+a#link2:visited{
+    color: red;
+}
+/*sirve para hacer animaciones cuando el mouse pasa por ensima*/
+p:hover{
+    color: green;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+/*el active es un estado que indica cuando el click se esta ejecutando*/
+span:active{
+    color:goldenrod;
+    font-size: 15px;
+}
+/*focus:permite resaltar para que el usuario sepa donde esta*/
+input:focus{
+    border-radius: 15px;
+    background: red;
+}

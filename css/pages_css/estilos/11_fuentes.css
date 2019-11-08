@@ -1,0 +1,24 @@
+/*para agregar diferentes tipos de fuentes es de la siguiente forma*/
+/*se enlasa de la siguiente manera para una fuente interna*/
+@font-face{
+    font-family: "irlandesa";
+    src: url("font/irlandesa.aot");
+    src: local('?'),
+        url("font/irlandesa.woff")format("woff"),
+        url("font/irlandesa.ttf")format("truetype"),
+        ;
+}
+
+p{
+    font-family: "McLaren", Arial, Helvetica, sans-serif;
+}
+
+/*como copiar fuentes desde algun sitio*/
+span{
+    font-family: 'Redressed', cursive;
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Pacifico', cursive;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+}

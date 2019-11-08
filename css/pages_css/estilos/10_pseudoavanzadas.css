@@ -1,0 +1,27 @@
+body{
+    background: wheat;
+}
+div *{
+    border: 1px solid black;
+    width: 80px;
+    height: 50px;
+    background: white;
+    display: inline-block;
+}
+
+/*:nth-child(N) se cambian las propiedades del indicado en orden progresivo
+de arriba hacia abajo, y si agregamos nth-last-child, se marca de abajo a arriba
+y si quieres marcar los impares se cambia N por odd y con pares even*/
+div *:nth-child(even){
+    background: orange;
+}
+/*
+nth-of-type(N)
+nth-last-of-type(N)
+
+:first-of-type
+:last-of-type
+:only-of-type
+:empty
+:not(S)
+*/

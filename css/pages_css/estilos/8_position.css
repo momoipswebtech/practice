@@ -7,6 +7,7 @@ izquierda de la pantalla*/
     margin: 25px;
     background: orange;
     position: relative;
+    overflow: hidden;
 }
 
 /*.padre > div{
@@ -20,7 +21,7 @@ izquierda de la pantalla*/
     float: right;/*con esta opcion el elemento se va a la derecha y deja el espacio
     y el hijo 1 se posicionara en el espacio, lo normal es que cuando ponemos un float
     a los siguientes elementos se les pone un display inline block*/
-    
+    position: absolute;
 }
 
 .hijo1{
@@ -28,6 +29,11 @@ izquierda de la pantalla*/
     height: 50px;
     background: red;
     display: inline-block;
+    
+    /*siempre debe de ir un position del tipo que sea para que el z-index funciones*/
+    z-index: 99;
+    position: relative;
+    top: -25px;
     /*los static, no toman en cuenta ninguna coordenada
     los relative, si lo reconocen, aplica al hijo con respecto al padre
      */
@@ -40,6 +46,7 @@ izquierda de la pantalla*/
     left: 200px;
     position: fixed;/*con esta posicion se se ubicara el hijo con respecto al body
     y siempre estara presente en pantalla */
+    
 }
 
 .hijo3{
@@ -47,4 +54,11 @@ izquierda de la pantalla*/
     height: 50px;
     background: royalblue;
     clear: both;/*limpia las coordenadas e inicia todo*/
+}
+.oculto{
+    visibility: hidden;
+}
+
+.transparencia{
+    opacity: 0.5;
 }
