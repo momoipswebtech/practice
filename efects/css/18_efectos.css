@@ -1,0 +1,13 @@
+div{
+    border: 2px solid black;
+    width: 50%;
+    position: relative;
+    margin-left: 25%;
+}
+
+div:hover{
+    background: brown;
+}
+a:focus{
+    color:red;
+}

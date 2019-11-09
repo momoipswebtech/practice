@@ -1,0 +1,53 @@
+/*son transformaciones que se pueden hacer a los elementos*/
+div{
+    height: 200px;
+    width: 200px;
+    background: orange;
+    border: 2px solid black;
+    display: inline-block;
+    margin: 50px;
+    transition-property: all;
+    transition-duration: 2s;
+    transition-timing-function: linear;
+    /*
+    ease, ease-in,ease-out, ease-in-out, linear
+    */
+    /*para retrasar la transiscion*/
+    transition-delay: 1s;
+}
+
+.rotate:hover{
+    transform: rotate(45deg);
+    /*se puede indicar el eje de rotacion*/
+    background: lightcoral;
+    /*transform-origin: top left;*/
+}
+.skew:hover{
+    transform: skew(20deg, 5deg);
+}
+.traslate:hover{
+    transform: translate(10px, -20px);
+}
+.scale:hover{
+    transform: scale(1.5);
+}
+.aux:hover{
+    transform: rotate(90deg) skew(20deg);
+    background: lightseagreen;
+}
+.mix:hover{
+    transform: skew(-30deg) rotate(90deg) translate(-10px, -30px);
+}
+/*
+transform: tipo(cantidad);
+transform: tipoX(cantidad);
+transform: tipoY(cantidad);
+transform: tipo(cantidadX, cantidadY);
+combinarlos
+transform: tipo() tipo() tipo()...;
+
+rotate
+skew
+translate
+scale
+*/

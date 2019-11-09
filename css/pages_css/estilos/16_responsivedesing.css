@@ -1,0 +1,47 @@
+/*la clave del responsive desing, es que el usuario solo se mueba de arria a bajo*/
+/*para hacer que en moviles no haga zoom se debe de agregar un vinculo en el head
+<meta name="viewport" content="widthdevice-width, initial-scale=1, maximum-scale=1">*/
+div{
+    width: 80%;
+    height: 150px;
+    border: 2px solid black;
+    margin: 8%;
+    display: inline-block;
+    background: white;
+}
+/*movil first, sirve para diseñar pantallas pequenas*/
+/*Medidas de celular acostado*/
+@media screen and (min-width: 480px){
+/*Si las pantallas tienen un tamaño de 480 o menor, hace todo lo que entre las llaves
+se indica*/
+    body{
+        background: blue;
+    }
+}
+/*Medidas de celular tablet*/
+@media screen and (min-width: 767px){
+/*Si las pantallas tienen un tamaño de 767 o menor, hace todo lo que entre las llaves
+se indica*/
+
+    body{
+        background: orange;
+    }
+    div{
+        width: 40%;
+        margin: 4%;
+    }
+}
+
+/*Medidas de celular monitor de computadora*/
+@media screen and (min-width: 950px){
+/*Si las pantallas tienen un tamaño de 950 o menor, hace todo lo que entre las llaves
+se indica*/
+
+    body{
+        background: red;
+    }
+    div{
+        width: 28%;
+        margin: 2%;
+    }
+}

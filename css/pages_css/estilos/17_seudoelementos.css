@@ -1,0 +1,18 @@
+div{
+    border: 8px solid black;
+    width: 50%;
+    position: relative;
+    margin-left: 25%;
+}
+
+div:before{
+    content: 'Hola';
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    background: red;
+}
+
+div:after{
+    content: 'mundo';
+}
