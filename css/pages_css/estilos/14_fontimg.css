@@ -1,6 +1,33 @@
 div{
-    height: 200px;
-    width: 200px;
+    height: 550px;
+    width: 500px;
     border: 2px solid red;
     margin: 50px;
+    
+    /*este no permite repetir la imagen
+    background: no-repeat;
+    /*repite solo sobre el eje x o y
+    background-repeat: repeat-y;
+    /*regula el punto desde comiensa a pintarse la imagen
+    background-position: border-box;*/
+}
+.imagen{
+    background: url("../../../html/marca.png"), url("../../../html/IMG.PNG");
+    
+    background-repeat: no-repeat, repeat;
+    background-position: right bottom, center center;
+
+}
+/*para colocar una marca de agua*/
+
+.degradados{
+    background: -webkit-radial-gradient(/*de forma circular radial*/
+        /*origen del degradado*/
+        center,/*se puede cambiar rigth top o con grados deg*/
+        blue 0%,
+        red 30%,
+        green 80%,
+        yellow 100%
+
+    );
 }
