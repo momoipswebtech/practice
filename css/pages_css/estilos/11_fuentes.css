@@ -23,6 +23,21 @@ span{
     font-size: 20px;
 }
 
-p.texto{
+p.text{
     font-family: arial;
+    font-weight: 700;/*cambia el grosor*/
+    font-style: italic;
+    text-align: justify;/*ubica ek texto en la pantalla*/
+    text-decoration: line-through;/**/
+    text-transform: capitalize;/*las primeras letras se combierten en mayusculas*/
+    /*lowercase.. cambia todas las letras en minusculas*/
+    text-indent: 14px;/*identa texto*/
+    letter-spacing: 5px;/*espacio entre letras*/
+    word-spacing: 5px;/*hace lo mismo que el anterior pero solo entre palabras*/
+
 }
+/*sudo elemento :first-letter, hace que la primera letra del texto tenga un mayor tamaño */
+p.text::first-letter{
+    font-size: 30px;
+}
+/*::first-line, este seudo hace grande toda la primera linea*/
