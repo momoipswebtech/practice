@@ -88,22 +88,13 @@ p{
 }
 
 .flash:hover{
-    -webkit-animation: 1s flash 2;
+    -webkit-animation: 1s flash 1;
 }
 @-webkit-keyframes flash{
-    0%{
+    0%, 50%, 100%{
         opacity: 1;
     }
-    25%{
+    25%, 75%{
         opacity: 0;
-    }
-    50%{
-        opacity: 1;
-    }
-    75%{
-        opacity 0;
-    }
-    100%{
-        opacity: 1;
     }
 }
