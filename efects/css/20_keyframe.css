@@ -98,3 +98,15 @@ p{
         opacity: 0;
     }
 }
+
+.click:hover{
+    -webkit-animation: 1s click 1;
+}
+@-webkit-keyframes click{
+    25%, 75%{
+        -webkit-transform: scale(0.8);
+    }
+    50%{
+        -webkit-transform: scale(1.1);
+    }
+}
