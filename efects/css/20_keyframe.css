@@ -1,0 +1,109 @@
+body{
+    background: cornflowerblue;
+    font-family: 'Arial';
+}
+/*efecto en barra de navegacion*/
+nav{
+    background: white;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    text-align: right;
+}
+nav ul{
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+}
+
+li{
+    display: inline-block;
+    margin: 7px -2px;
+}
+a{
+  text-decoration: none;
+  color: black;
+  font-weight: bolder;
+  padding: 5px 10px; 
+}
+
+/*pseudoclase focus*/
+
+li:nth-of-type(1) a:focus{
+    border-bottom: 3px solid #4e34dd;
+}
+li:nth-of-type(2) a:focus{
+    border-bottom: 3px solid #4e34dd;
+}
+li:nth-of-type(3) a:focus{
+    border-bottom: 3px solid #4e34dd;
+}
+h2{
+    padding: 10px;
+}
+div{
+    font-family: 'Arial';
+    background-color: #a8cf45;
+    margin: 15px 2px;
+    padding: 5px 40px;
+    text-align: center;
+    font-weight: bolder;
+    width: 80px;
+    display: inline-block;
+    vertical-align: middle;
+    
+}
+p{
+    padding-top: 15px;
+}
+.caja:hover{
+    -webkit-animation: 5s cambia_color 1;
+}
+
+@-webkit-keyframes cambia_color{
+    /*son lineas del tiempo que describen que vna hacer en el transcurso del tiempo*/
+    0%, 70%{
+        background: blue;
+    }
+    50%{
+        background: red;
+        height: 75px;
+    }
+    /*para repetir se agrega en el mismo efecto*/
+
+}
+.otra:hover{
+    -webkit-animation: 4s variante 1;
+}
+@-webkit-keyframes variante{
+    from{
+        width: 200px;
+        background: white;
+    }
+    to{
+        width: 100px;
+        background: gray;
+    }
+}
+
+.flash:hover{
+    -webkit-animation: 1s flash 2;
+}
+@-webkit-keyframes flash{
+    0%{
+        opacity: 1;
+    }
+    25%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    75%{
+        opacity 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
