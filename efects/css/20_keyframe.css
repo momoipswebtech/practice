@@ -45,7 +45,7 @@ h2{
 div{
     font-family: 'Arial';
     background-color: #a8cf45;
-    margin: 15px 2px;
+    margin: 50px 15px;
     padding: 5px 40px;
     text-align: center;
     font-weight: bolder;
@@ -110,3 +110,134 @@ p{
         -webkit-transform: scale(1.1);
     }
 }
+
+.chicle:hover{
+    -webkit-animation: 1s chicle 1;
+}
+
+@-webkit-keyframes chicle{
+    30%{
+        -webkit-transform: 
+        scaleX(1.25) scaleY(0.75);
+    }
+    50%{
+        -webkit-transform: 
+        scaleX(0.75) scaleY(1.25);
+    }
+    60%{
+        -webkit-transform: 
+        scaleX(1.15) scaleY(0.85);
+    }
+}
+
+.vibrador:hover{
+    -webkit-animation: 1s vibracion infinite;
+}
+@-webkit-keyframes vibracion{
+    5%, 25%, 45%, 65%, 85%{
+        -webkit-transform: translateY(-10px);
+    }
+    10%, 30%, 50%, 70%, 90%{
+        -webkit-transform: translateX(-10px);
+    }
+    15%, 35%, 55%, 75%, 95%{
+        -webkit-transform: translateY(10px);
+    }
+    20%, 40%, 60%, 80%{
+        -webkit-transform: translateX(10px);
+    }
+}
+
+.cartel:hover{
+    -webkit-animation: 1s cartel 1;
+}
+@-webkit-keyframes cartel{
+    20%{
+        -webkit-transform: rotate(15deg);
+    }
+    40%{
+        -webkit-transform: rotate(-10deg);
+    }
+    60%{
+        -webkit-transform: rotate(5deg);
+    }
+    80%{
+        -webkit-transform: rotate(-3deg);
+    }
+}
+
+.balanceo:hover{
+    -webkit-animation: 1s balanceo 1 ;
+}
+@-webkit-keyframes balanceo{
+    20%{
+        -webkit-transform: scaleY(0.7)
+                        rotate(-6deg);
+    }
+    30%, 70%{
+        -webkit-transform: scaleY(1.1)
+                        rotate(6deg);
+    }
+    50%, 90%{
+        -webkit-transform: scaleY(1.1)
+                        rotate(-6deg);
+    }
+}
+
+.vaiven:hover{
+    -webkit-animation: 1s vaiven 1;
+}
+@-webkit-keyframes vaiven{
+    15%{
+        -webkit-transform: rotate(-10deg)
+                           translateX(-25%);
+    }
+    30%{
+        -webkit-transform: rotate(5deg)
+                           translateX(20%);
+    }
+    45%{
+        -webkit-transform: rotate(-3deg)
+                           translateX(-10%);
+    }
+    60%{
+        -webkit-transform: rotate(2deg)
+                           translateX(5%);
+    }
+    75%{
+        -webkit-transform: rotate(-1deg)
+                           translateX(-3%);
+    }
+}
+/*las siguientes animaciones se cargan junto con la pagina*/
+.descolgado{
+    -webkit-animation: 1s descolgado 1;
+    -webkit-transform-origin: top left;
+}
+
+@-webkit-keyframes descolgado{
+    20%{
+        -webkit-transform: rotate(80deg);
+    }
+    40%{
+        -webkit-transform: rotate(60deg);
+    }
+    90%{
+        opacity: 1;
+        -webkit-transform: rotate(60deg)
+    }
+    100%{
+        -webkit-transform: translateY(400px);
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
