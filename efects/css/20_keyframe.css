@@ -379,6 +379,16 @@ p{
     }
 }
 
-
+.aparicion{
+    -webkit-animation: 2s aparicion 1;
+}
+@-webkit-keyframes aparicion{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0.8;
+    }
+}
 
 
